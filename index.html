@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Boxes</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+        const colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF'];
+        const container = document.getElementById('container');
+
+        colors.forEach(color => {
+            const box = document.createElement('div');
+            box.className = 'box';
+            box.style.backgroundColor = color;
+            container.appendChild(box);
+        });
+    </script>
+<h1>Rainbow Poem</h1>
+<p>A rainbow arcs across the sky,  <br>
+    A painted smile where colors lie.  <br>
+    Red and orange, yellow too,  <br>
+    Green and blue, and violet hue.<br><br>
+    
+    It comes after the rain’s embrace,  <br>
+    A fleeting bridge of light and grace.  <br>
+    A promise bright, a gentle show,  <br>
+    That even storms bring beauty's glow.</p>
+
+
+</body>
+
+</html>
